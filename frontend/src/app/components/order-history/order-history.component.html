@@ -16,11 +16,12 @@
                 <th scope="col">Rating</th>
                 <th scope="col">Order Again?</th>
                 <th scope="col"></th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             @for (o of AllOrders; track o.id) {
-                <tr scope="row" single-row [DisplayOrder]="o" (Delete)="deleteOrder($event)"></tr>
+                <tr scope="row" single-row [DisplayOrder]="o" (Delete)="deleteOrder($event)" (Update)="updateOrder($event)"></tr>
             }
         </tbody>
     </table>

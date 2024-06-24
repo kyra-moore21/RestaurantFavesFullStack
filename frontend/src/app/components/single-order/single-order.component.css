@@ -4,3 +4,32 @@
 .btn-custom:hover{
     background-color: #ef6738;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+.form-popup {
+    position: absolute;
+    align-items: center;
+    top: 10%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #03324c;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .submit-btn{
+    background-color: #ef6738;
+    color: rgb(245, 242, 242);
+    border-radius: 16px;
+  }
+  .form-custom{
+    color:rgb(245, 242, 242);
+  }

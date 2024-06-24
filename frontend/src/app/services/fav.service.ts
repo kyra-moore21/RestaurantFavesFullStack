@@ -14,24 +14,26 @@ export class FavService {
   GetAll(){
     return this.http.get<OrderModel[]>(`${this.url}/api/Order`);
   }
-  searchOrders(
-    restaurant: string,
-    orderAgain: boolean | null
-  ):Observable<OrderModel[]>{
-     // Add URL query parameters to an object.
-    // HttpClient will add them to the URL safely.
-    let params: any = {};
-    if(restaurant) {
-      params.q = restaurant;
+  searchOrders(restaurant: string,orderAgain: boolean | null ):Observable<OrderModel[]>{
+    let params = new HttpParams();
+
+    if (restaurant) {
+      params = params.set('q', restaurant);
     }
-    if(orderAgain !== null){
-      params.orderAgain = orderAgain;
+
+    if (orderAgain !== null) {
+      params = params.set('orderAgain', orderAgain.toString());
     }
     return this.http.get<OrderModel[]>(`${this.url}/api/Order`, {params});
   }
-
+  getByID(id:number):Observable<OrderModel>{
+    return this.http.get<OrderModel>(`${this.url}/api/Order${id}`);
+  }
+  updateOrder(updatedOrder:OrderModel):Observable<void>{
+    return this.http.put<void>(`${this.url}/api/Orders/${updatedOrder.id}`, updatedOrder);
+  }
   deleteOrder(id:number):Observable<void>{
-      return this.http.delete<void>(`${this.url}/api/Order/${id}`)
+      return this.http.delete<void>(`${this.url}/api/Order/${id}`);
   }
   addOrder(newOrder:OrderModel):Observable<OrderModel>{
     return this.http.post<OrderModel>(`${this.url}/api/Order`, newOrder);

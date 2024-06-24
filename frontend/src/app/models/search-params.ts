@@ -1,5 +1,5 @@
 
 export interface SearchParams {
-    query: string;
+  query: string;
   orderAgain: boolean | null;
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kyram\\source\\repos\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj": {}
+    "C:\\Users\\kyram\\OneDrive\\Desktop\\Restaurant\\backend\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kyram\\source\\repos\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj": {
+    "C:\\Users\\kyram\\OneDrive\\Desktop\\Restaurant\\backend\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kyram\\source\\repos\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj",
+        "projectUniqueName": "C:\\Users\\kyram\\OneDrive\\Desktop\\Restaurant\\backend\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj",
         "projectName": "Restaurant Backend",
-        "projectPath": "C:\\Users\\kyram\\source\\repos\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj",
+        "projectPath": "C:\\Users\\kyram\\OneDrive\\Desktop\\Restaurant\\backend\\Restaurant Backend\\Restaurant Backend\\Restaurant Backend.csproj",
         "packagesPath": "C:\\Users\\kyram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kyram\\source\\repos\\Restaurant Backend\\Restaurant Backend\\obj\\",
+        "outputPath": "C:\\Users\\kyram\\OneDrive\\Desktop\\Restaurant\\backend\\Restaurant Backend\\Restaurant Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kyram\\AppData\\Roaming\\NuGet\\NuGet.Config",

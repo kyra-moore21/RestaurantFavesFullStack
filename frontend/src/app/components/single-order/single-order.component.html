@@ -11,4 +11,34 @@
     <td><button (click)="emitDelete()"   class="btn btn-custom">
         <i class="fa-solid fa-trash-can" style="color: #f8f8f8;"></i>
     </button></td>
-
+    <td><button (click)="showForm = !showForm"  class="btn btn-custom">
+        <i class="fa-solid fa-pen-to-square" style="color: #f8f8f8;"></i>
+    </button></td>
+    @if(showForm){
+        <div class="overlay">
+            <div class="form-popup col-6 mx-auto p-3 rounded">
+                <div>
+                    <h2 class="align-text-center form-custom">Edit Item</h2>
+                </div>
+                <div>
+                <label class="form-label form-custom" for="description">Item:</label>
+                <input class="form-control" type="text" [(ngModel)]="DisplayOrder.description" />
+            </div>
+            <div>
+                <label class="form-label form-custom" for="restaurant">Restaurant:</label>
+                <input class="form-control" type="text" [(ngModel)]="DisplayOrder.restaurant" />
+            </div>
+            <div>
+                <label class="form-label form-custom" for="rating">Rating:</label>
+                <input class="form-control" type="number" [(ngModel)]="DisplayOrder.rating" min="1" max="5"/>
+            </div>
+            <div>
+                <label class="form-custom" for="orderAgain">Order Again:</label>
+                <input class="form-check" type="checkbox" [(ngModel)]="DisplayOrder.orderAgain" />
+            </div>
+            <div>
+                <button class="btn submit-btn align-text-center" (click)="submit()">Submit</button>
+            </div>
+        </div>>
+    </div>
+    }

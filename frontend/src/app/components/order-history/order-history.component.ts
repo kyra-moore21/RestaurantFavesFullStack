@@ -64,4 +64,9 @@ addOrder(o:OrderModel){
     this.getOrders();
   })
 }
+updateOrder(o:OrderModel){
+  this._favService.updateOrder(o).subscribe((response) => {
+    this.getOrders();
+  })
+}
 }
