@@ -1,0 +1,15 @@
+.card-custom{
+    background: #f2f8fc;
+    border-color: #03324ccd;
+    border-radius: 20px;
+    border-width: 2px;
+}
+.btn-custom{
+    background: none;
+    border-color: #03324c;
+    color: #03324c;
+    border-radius: 18px;
+    border-width: 2px;
+    font-weight: bold;
+
+}

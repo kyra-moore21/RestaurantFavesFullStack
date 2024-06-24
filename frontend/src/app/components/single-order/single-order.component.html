@@ -1,0 +1,14 @@
+
+    <td>{{DisplayOrder.description}}</td>
+    <td>{{DisplayOrder.restaurant}}</td>
+    <td>{{DisplayOrder.rating}}</td>
+    @if(DisplayOrder.orderAgain){
+        <td>✓</td>
+    }
+    @else{
+        <td></td>
+    }
+    <td><button (click)="emitDelete()"   class="btn btn-custom">
+        <i class="fa-solid fa-trash-can" style="color: #f8f8f8;"></i>
+    </button></td>
+

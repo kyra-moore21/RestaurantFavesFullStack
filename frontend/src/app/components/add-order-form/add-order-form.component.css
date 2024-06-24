@@ -1,0 +1,11 @@
+.card-custom{
+    background: #03324c;
+    color: white !important;
+    border-radius: 16px;
+}
+.btn-custom{
+    background: #ef6738;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 16px;
+}

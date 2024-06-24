@@ -1,0 +1,31 @@
+<div class="row d-flex justify-content-center align-items-center mb-3">
+
+    <div class="card card-custom text-center" style="width: 18rem;">
+        <div class="card-body">
+            <h3 class="card-title">Add An Order</h3>
+            <div class="mb-3 row">
+                <label class="card-text d-block" for="description">Item:</label>
+                <input class="card-text form-control" type="text" id="description" [(ngModel)]="formOrder.description" />
+            </div>
+            <div class="mb-3 row">
+                <label class="card-text d-block" for="restaurant">Restaurant:</label>
+                <input class="card-text form-control" type="text" id="restaurant" [(ngModel)]="formOrder.restaurant" />
+            </div>
+            <div class="mb-3 row">
+                <label class="card-text col-6 form-label" for="rating">Rating (1-5):</label>
+                <div class="col-5">
+                    <input class="card-text form-control" type="number" id="rating" [(ngModel)]="formOrder.rating" min="1" max="5" />
+                </div>
+                <div class="mb-3 mt-2 row">  
+                    <div class="form-check-prepend">
+                        <label class="form-check-label mx-4" for="orderAgain">Order again:</label>
+                        <input class="form-check-input pull-right" type="checkbox" id="orderAgain" [(ngModel)]="formOrder.orderAgain" />
+                    </div>     
+                </div>
+            <div >
+                <button class="col-8 btn btn-custom" (click)="emitSubmitted()">SUBMIT</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
